@@ -26,6 +26,7 @@ namespace NobelPrizeApp.ApplicationLogger
 
         public static void LogPrizeError(string errorMessage)
         {
+            Logger.Trace("An error ocurred retrieving the information from the API.");
             Logger.Info("An error has ocurred on retrieving prize information.");
             Logger.Error(errorMessage);
         }
