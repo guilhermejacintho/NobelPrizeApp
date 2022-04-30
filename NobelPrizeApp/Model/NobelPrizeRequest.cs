@@ -6,10 +6,10 @@ namespace NobelPrizeApp.Model
 {
     public class NobelPrizeRequest
     {
-        public RequestInfromation[] requests;
+        public RequestInformation[] requests;
     }
 
-    public class RequestInfromation
+    public class RequestInformation
     {
         public string category;
         public string year;
