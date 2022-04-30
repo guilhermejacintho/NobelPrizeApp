@@ -14,16 +14,26 @@ namespace NobelPrizeApp
     {
         static async Task Main(string[] args)
         {
-            IFileReader fReader;
-
-            string pathFile = args[0];
+            IFileReader fReader; 
+            string pathFile;
 
             fReader = new FileReader.FileReader();
 
-            if (!String.IsNullOrEmpty(fReader.ValidatePath(pathFile)))
+            if (args.Length > 0)
+            {
+                pathFile = args[0];
+            }
+            else
             {
                 Console.Write("Please input the File Path: ");
                 pathFile = Console.ReadLine();
+            }
+
+            if (!String.IsNullOrEmpty(fReader.ValidatePath(pathFile)))
+            {
+                Console.Write("The path informed is invalid.");
+
+                return;
             }
 
             var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
