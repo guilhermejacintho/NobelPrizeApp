@@ -8,5 +8,6 @@ namespace NobelPrizeApp.FileReader
     public interface IFileReader
     {        
         FileInformation<NobelPrizeRequest> ReadFile(string path);
+        string ValidatePath(string path);
     }
 }

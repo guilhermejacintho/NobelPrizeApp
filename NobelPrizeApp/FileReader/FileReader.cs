@@ -47,7 +47,7 @@ namespace NobelPrizeApp.FileReader
             return returnObject;                
         }
 
-        private string ValidatePath(string path)
+        public string ValidatePath(string path)
         {
             if (string.IsNullOrEmpty(path))
                 return "The path was not set.";
