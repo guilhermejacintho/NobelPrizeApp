@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NobelPrizeApp": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\Guilherme\\source\\repos\\NobelPrizeApp\\NobelPrizeApp\\FileExamples\\Example.txt\""
+    }
+  }
+}
